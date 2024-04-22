@@ -1,0 +1,167 @@
+WhatWeb - Checks for X-XSS Protection Header
+------------------------
+
+[1m[34mhttp://dev-app.saaspe.com/[0m [308 Permanent Redirect] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mRedirectLocation[0m[[0m[22mhttps://dev-app.saaspe.com[0m], [1mTitle[0m[[1m[33m308 Permanent Redirect[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+[1m[34mhttps://dev-app.saaspe.com[0m [200 OK] [1mCookies[0m[[0m[22mINGRESSCOOKIE[0m], [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mHttpOnly[0m[[0m[22mINGRESSCOOKIE[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mScript[0m, [1mStrict-Transport-Security[0m[[0m[22mmax-age=15724800; includeSubDomains[0m], [1mTitle[0m[[1m[33mSaaSPe[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+
+
+Fierce Subdomains Bruter - Brute Forces Subdomain Discovery.
+------------------------
+
+NS: joselyn.ns.cloudflare.com. jihoon.ns.cloudflare.com.
+SOA: jihoon.ns.cloudflare.com. (108.162.195.233)
+Zone: failure
+Wildcard: failure
+
+
+SSLyze - Checks for Secure Renegotiation Support and Client Renegotiation.
+------------------------
+
+
+ CHECKING CONNECTIVITY TO SERVER(S)
+ ----------------------------------
+
+   dev-app.saaspe.com:443    => 172.67.177.16 
+
+
+ SCAN RESULTS FOR DEV-APP.SAASPE.COM:443 - 172.67.177.16
+ -------------------------------------------------------
+
+ * Session Renegotiation:
+       Client Renegotiation DoS Attack:   OK - Not vulnerable
+       Secure Renegotiation:              OK - Supported
+
+ SCANS COMPLETED IN 1.27604 S
+ ----------------------------
+
+ COMPLIANCE AGAINST MOZILLA TLS CONFIGURATION
+ --------------------------------------------
+
+    Disabled; use --mozilla_config={old, intermediate, modern}.
+
+
+
+AMass - Brutes Domain for Subdomains
+------------------------
+
+dev-app.saaspe.com (FQDN) --> a_record --> 104.21.31.139 (IPAddress)
+dev-app.saaspe.com (FQDN) --> a_record --> 172.67.177.16 (IPAddress)
+dev-app.saaspe.com (FQDN) --> aaaa_record --> 2606:4700:3035::ac43:b110 (IPAddress)
+dev-app.saaspe.com (FQDN) --> aaaa_record --> 2606:4700:3037::6815:1f8b (IPAddress)
+172.67.0.0/16 (Netblock) --> contains --> 172.67.177.16 (IPAddress)
+13335 (ASN) --> managed_by --> CLOUDFLARENET - Cloudflare, Inc. (RIROrganization)
+13335 (ASN) --> announces --> 172.67.0.0/16 (Netblock)
+104.21.16.0/20 (Netblock) --> contains --> 104.21.31.139 (IPAddress)
+13335 (ASN) --> announces --> 104.21.16.0/20 (Netblock)
+2606:4700:3035::/48 (Netblock) --> contains --> 2606:4700:3035::ac43:b110 (IPAddress)
+2606:4700:3037::/48 (Netblock) --> contains --> 2606:4700:3037::6815:1f8b (IPAddress)
+13335 (ASN) --> announces --> 2606:4700:3035::/48 (Netblock)
+13335 (ASN) --> announces --> 2606:4700:3037::/48 (Netblock)
+
+The enumeration has finished
+
+
+The Harvester - Scans for emails using Google's passive search.
+------------------------
+
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.3.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: dev-app.saaspe.com 
+
+cannot import name 'CensysCertificates' from 'censys.search' (/usr/lib/python3/dist-packages/censys/search/__init__.py)
+
+
+Nmap [Slowloris DoS] - Checks for Slowloris Denial of Service Vulnerability.
+------------------------
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-25 01:54 EDT
+Nmap scan report for dev-app.saaspe.com (104.21.31.139)
+Host is up (0.14s latency).
+Other addresses for dev-app.saaspe.com (not scanned): 2606:4700:3035::ac43:b110 2606:4700:3037::6815:1f8b 172.67.177.16
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-slowloris: 
+|   Probably vulnerable:
+|   the DoS attack took +24m26s
+|   with 1001 concurrent connections
+|   and 26 sent queries
+|_  Monitoring thread couldn't communicate with the server. This is probably due to max clients exhaustion or something similar but not due to slowloris attack.
+443/tcp open  https
+|_http-slowloris: false
+
+Nmap done: 1 IP address (1 host up) scanned in 3269.25 seconds
+
+
+Host - Checks for existence of IPV6 address.
+------------------------
+
+;; communications error to 192.168.0.1#53: timed out
+;; communications error to 192.168.0.1#53: timed out
+;; communications error to 2406:7400:48:10::2#53: timed out
+;; communications error to 2406:7400:38:1::2#53: timed out
+;; no servers could be reached
+
+
+
+Nikto - Checks the Domain Headers.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.21.31.139, 172.67.177.16, 2606:4700:3037::6815:1f8b, 2606:4700:3035::ac43:b110
++ Target IP:          104.21.31.139
++ Target Hostname:    dev-app.saaspe.com
++ Target Port:        80
++ Start Time:         2024-03-25 04:44:35 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Root page / redirects to: https://dev-app.saaspe.com
++ 266 requests: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2024-03-25 04:44:56 (GMT-4) (21 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Performs a Full TCP Port Scan
+------------------------
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-25 04:54 EDT
+Nmap scan report for dev-app.saaspe.com (104.21.31.139)
+Host is up (0.061s latency).
+Other addresses for dev-app.saaspe.com (not scanned): 2606:4700:3035::ac43:b110 2606:4700:3037::6815:1f8b 172.67.177.16
+Not shown: 65522 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+2052/tcp open  clearvisn
+2053/tcp open  knetd
+2082/tcp open  infowave
+2083/tcp open  radsec
+2086/tcp open  gnunet
+2087/tcp open  eli
+2095/tcp open  nbx-ser
+2096/tcp open  nbx-dir
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+8880/tcp open  cddbp-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 695.42 seconds
+
+

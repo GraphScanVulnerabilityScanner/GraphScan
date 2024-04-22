@@ -1,0 +1,244 @@
+Nmap - Performs a Full TCP Port Scan
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-27 05:43 EDT
+Nmap scan report for sit-app.saaspe.com (172.67.177.16)
+Host is up (0.068s latency).
+Other addresses for sit-app.saaspe.com (not scanned): 2606:4700:3035::ac43:b110 2606:4700:3037::6815:1f8b 104.21.31.139
+Not shown: 65523 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+2052/tcp open  clearvisn
+2053/tcp open  knetd
+2083/tcp open  radsec
+2086/tcp open  gnunet
+2087/tcp open  eli
+2095/tcp open  nbx-ser
+2096/tcp open  nbx-dir
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+8880/tcp open  cddbp-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 557.85 seconds
+
+
+Nmap [FREAK] - Checks only for FREAK Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-27 05:53 EDT
+Nmap scan report for sit-app.saaspe.com (104.21.31.139)
+Host is up (0.061s latency).
+Other addresses for sit-app.saaspe.com (not scanned): 2606:4700:3037::6815:1f8b 2606:4700:3035::ac43:b110 172.67.177.16
+
+PORT    STATE SERVICE
+443/tcp open  https
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256-draft (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: client
+|   TLSv1.3: 
+|     ciphers: 
+|       TLS_AKE_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|     cipher preference: client
+|_  least strength: C
+
+Nmap done: 1 IP address (1 host up) scanned in 5.20 seconds
+
+
+AMass - Brutes Domain for Subdomains
+------------------------
+
+sit-app.saaspe.com (FQDN) --> a_record --> 172.67.177.16 (IPAddress)
+sit-app.saaspe.com (FQDN) --> a_record --> 104.21.31.139 (IPAddress)
+sit-app.saaspe.com (FQDN) --> aaaa_record --> 2606:4700:3035::ac43:b110 (IPAddress)
+sit-app.saaspe.com (FQDN) --> aaaa_record --> 2606:4700:3037::6815:1f8b (IPAddress)
+172.67.0.0/16 (Netblock) --> contains --> 172.67.177.16 (IPAddress)
+13335 (ASN) --> managed_by --> CLOUDFLARENET - Cloudflare, Inc. (RIROrganization)
+13335 (ASN) --> announces --> 172.67.0.0/16 (Netblock)
+2606:4700:3035::/48 (Netblock) --> contains --> 2606:4700:3035::ac43:b110 (IPAddress)
+13335 (ASN) --> announces --> 104.21.16.0/20 (Netblock)
+13335 (ASN) --> announces --> 2606:4700:3035::/48 (Netblock)
+
+The enumeration has finished
+
+
+Nikto - Checks the Domain Headers.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.21.31.139, 172.67.177.16, 2606:4700:3035::ac43:b110, 2606:4700:3037::6815:1f8b
++ Target IP:          104.21.31.139
++ Target Hostname:    sit-app.saaspe.com
++ Target Port:        80
++ Start Time:         2024-03-27 06:03:39 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Root page / redirects to: https://sit-app.saaspe.com
++ 266 requests: 0 error(s) and 3 item(s) reported on remote host
++ End Time:           2024-03-27 06:04:00 (GMT-4) (21 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Fierce Subdomains Bruter - Brute Forces Subdomain Discovery.
+------------------------
+
+NS: jihoon.ns.cloudflare.com. joselyn.ns.cloudflare.com.
+SOA: jihoon.ns.cloudflare.com. (172.64.35.233)
+Zone: failure
+Wildcard: failure
+
+
+XSSer - Checks for Cross-Site Scripting [XSS] Attacks.
+------------------------
+
+/usr/local/bin/xsser:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  __import__('pkg_resources').run_script('xsser==1.8.4', 'xsser')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/xsser-1.8.4-py3.11.egg/core/curlcontrol.py", line 51, in Curl
+    f = open("core/fuzzing/user-agents.txt").readlines() # set path for user-agents
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'core/fuzzing/user-agents.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/xsser", line 4, in <module>
+    __import__('pkg_resources').run_script('xsser==1.8.4', 'xsser')
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 722, in run_script
+    self.require(requires)[0].run_script(script_name, ns)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1561, in run_script
+    exec(code, namespace, namespace)
+  File "/usr/local/lib/python3.11/dist-packages/xsser-1.8.4-py3.11.egg/EGG-INFO/scripts/xsser", line 22, in <module>
+    from core.main import xsser
+  File "/usr/local/lib/python3.11/dist-packages/xsser-1.8.4-py3.11.egg/core/main.py", line 42, in <module>
+    from core.curlcontrol import Curl
+  File "/usr/local/lib/python3.11/dist-packages/xsser-1.8.4-py3.11.egg/core/curlcontrol.py", line 29, in <module>
+    class Curl:
+  File "/usr/local/lib/python3.11/dist-packages/xsser-1.8.4-py3.11.egg/core/curlcontrol.py", line 53, in Curl
+    f = open("fuzzing/user-agents.txt").readlines() # set path for user-agents when testing
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzzing/user-agents.txt'
+
+
+Nmap [Slowloris DoS] - Checks for Slowloris Denial of Service Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-27 06:11 EDT
+Stats: 0:04:53 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 98.52% done; ETC: 06:16 (0:00:04 remaining)
+Nmap scan report for sit-app.saaspe.com (172.67.177.16)
+Host is up (0.066s latency).
+Other addresses for sit-app.saaspe.com (not scanned): 2606:4700:3037::6815:1f8b 2606:4700:3035::ac43:b110 104.21.31.139
+
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-slowloris: false
+443/tcp open  https
+| http-slowloris: 
+|   Probably vulnerable:
+|   the DoS attack took +2s
+|   with 1 concurrent connections
+|   and 0 sent queries
+|_  Monitoring thread couldn't communicate with the server. This is probably due to max clients exhaustion or something similar but not due to slowloris attack.
+
+Nmap done: 1 IP address (1 host up) scanned in 1809.17 seconds
+
+
+WhatWeb - Checks for X-XSS Protection Header
+------------------------
+
+[1m[34mhttp://sit-app.saaspe.com/[0m [308 Permanent Redirect] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mRedirectLocation[0m[[0m[22mhttps://sit-app.saaspe.com[0m], [1mTitle[0m[[1m[33m308 Permanent Redirect[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+[1m[34mhttps://sit-app.saaspe.com[0m [200 OK] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mScript[0m, [1mStrict-Transport-Security[0m[[0m[22mmax-age=15724800; includeSubDomains[0m], [1mTitle[0m[[1m[33mSaaSPe[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+
+
+SSLyze - Checks for Secure Renegotiation Support and Client Renegotiation.
+------------------------
+
+
+ CHECKING CONNECTIVITY TO SERVER(S)
+ ----------------------------------
+
+   sit-app.saaspe.com:443    => 104.21.31.139 
+
+
+ SCAN RESULTS FOR SIT-APP.SAASPE.COM:443 - 104.21.31.139
+ -------------------------------------------------------
+
+ * Session Renegotiation:
+       Client Renegotiation DoS Attack:   OK - Not vulnerable
+       Secure Renegotiation:              OK - Supported
+
+ SCANS COMPLETED IN 0.707786 S
+ -----------------------------
+
+ COMPLIANCE AGAINST MOZILLA TLS CONFIGURATION
+ --------------------------------------------
+
+    Disabled; use --mozilla_config={old, intermediate, modern}.
+
+
+
+Nmap - Fast Scan [Only Few Port Checks]
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-03-27 06:44 EDT
+Nmap scan report for sit-app.saaspe.com (104.21.31.139)
+Host is up (0.064s latency).
+Other addresses for sit-app.saaspe.com (not scanned): 2606:4700:3035::ac43:b110 2606:4700:3037::6815:1f8b 172.67.177.16
+Not shown: 96 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 4.13 seconds
+
+

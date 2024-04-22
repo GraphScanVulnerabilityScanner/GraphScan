@@ -1,0 +1,46 @@
+Nmap - Checks for MS-SQL Server DB
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-08 02:32 EDT
+Nmap done: 1 IP address (1 host up) scanned in 2.11 seconds
+
+
+Drupal Checker - Checks for Drupal Installation.
+------------------------
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="SaaSPe is an enterprise SAAS and cloud management platform designed to optimize the spend and maximize operational efficiency."/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link
+     0K                                                        19.5M=0s
+
+2024-04-08 02:32:30 (19.5 MB/s) - ‘/tmp/graphScan_temp_drp_check’ saved [935]
+
+mily=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/><title>SaaSPe</title><script defer="defer" src="/static/js/main.133e5867.js"></script><link href="/static/css/main.338cc899.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+
+Nikto - Checks for HTTP Options on the Domain.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.67.177.16, 104.21.31.139, 2606:4700:3035::ac43:b110, 2606:4700:3037::6815:1f8b
++ Target IP:          172.67.177.16
++ Target Hostname:    dev-app.saaspe.com
++ Target Port:        80
++ Start Time:         2024-04-08 02:32:31 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://dev-app.saaspe.com
++ 248 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2024-04-08 02:33:05 (GMT-4) (34 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Joomla Checker - Checks for Joomla Installation.
+------------------------
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="SaaSPe is an enterprise SAAS and cloud management platform designed to optimize the spend and maximize operational efficiency."/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="prec
+     0K                                                        7.22M=0s
+
+2024-04-08 02:33:05 (7.22 MB/s) - ‘/tmp/graphScan_temp_joom_check’ saved [935]
+
+s:wght@400;500;600&display=swap" rel="stylesheet"/><title>SaaSPe</title><script defer="defer" src="/static/js/main.133e5867.js"></script><link href="/static/css/main.338cc899.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+

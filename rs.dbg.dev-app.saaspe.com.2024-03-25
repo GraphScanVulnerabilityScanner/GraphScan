@@ -1,0 +1,49 @@
+Nikto - Checks for Server Issues.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.67.177.16, 104.21.31.139, 2606:4700:3035::ac43:b110, 2606:4700:3037::6815:1f8b
++ Target IP:          172.67.177.16
++ Target Hostname:    dev-app.saaspe.com
++ Target Port:        80
++ Start Time:         2024-03-25 01:27:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://dev-app.saaspe.com
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2024-03-25 01:28:09 (GMT-4) (25 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Checks for Remote Desktop Service over TCP
+------------------------
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-25 01:28 EDT
+Nmap done: 1 IP address (1 host up) scanned in 2.22 seconds
+
+
+WhatWeb - Checks for X-XSS Protection Header
+------------------------
+
+[1m[34mhttp://dev-app.saaspe.com/[0m [308 Permanent Redirect] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mRedirectLocation[0m[[0m[22mhttps://dev-app.saaspe.com[0m], [1mTitle[0m[[1m[33m308 Permanent Redirect[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+[1m[34mhttps://dev-app.saaspe.com[0m [200 OK] [1mCookies[0m[[0m[22mINGRESSCOOKIE[0m], [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mHttpOnly[0m[[0m[22mINGRESSCOOKIE[0m], [1mIP[0m[[0m[22m104.21.31.139[0m], [1mScript[0m, [1mStrict-Transport-Security[0m[[0m[22mmax-age=15724800; includeSubDomains[0m], [1mTitle[0m[[1m[33mSaaSPe[0m], [1mUncommonHeaders[0m[[0m[22mcf-cache-status,report-to,nel,cf-ray,alt-svc[0m]
+
+
+Nmap - Checks for ORACLE DB
+------------------------
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-25 01:28 EDT
+Nmap done: 1 IP address (1 host up) scanned in 2.09 seconds
+
+
+Fierce Subdomains Bruter - Brute Forces Subdomain Discovery.
+------------------------
+
+NS: joselyn.ns.cloudflare.com. jihoon.ns.cloudflare.com.
+SOA: jihoon.ns.cloudflare.com. (108.162.195.233)
+Zone: failure
+Wildcard: failure
+
+
